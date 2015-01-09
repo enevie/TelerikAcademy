@@ -9,9 +9,9 @@ class Age
     static void Main()
     {
         Console.WriteLine("Please enter your date of  birth: ");
-        DateTime time = DateTime.Parse(Console.ReadLine());
+        DateTime dateOfBirth = DateTime.Parse(Console.ReadLine());
         DateTime now = DateTime.Now;
-        int years = ((now - time).Days)/365;
+        int years = ((now - dateOfBirth).Days)/365;
         Console.WriteLine("You are " + years + " years old.");
         int afterYears = years + 10;
         Console.WriteLine("After 10 years you will be " + afterYears +" years old!");
