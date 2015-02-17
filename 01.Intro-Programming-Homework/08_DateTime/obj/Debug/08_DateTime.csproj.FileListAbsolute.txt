@@ -1,1 +1,0 @@
-D:\Telerik Academy\TelerikAcademy\01.Intro-Programming-Homework\08_DateTime\bin\Debug\08_DateTime.exe.config
