@@ -1,0 +1,2 @@
+The point is with coords: x: 1 y: 5 z: 3
+The point is with coords: x: 3 y: 7 z: 1
