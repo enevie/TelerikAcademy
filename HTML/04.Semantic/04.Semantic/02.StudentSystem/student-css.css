@@ -1,0 +1,36 @@
+﻿ .header img {
+            height: 80px;
+            width: 80px;
+            float: left;
+            padding-left: 50px;
+            padding-right: 40px;
+        }
+
+        .header h1 {
+            padding-top: 20px;
+            font-size: 22px;
+            font-weight: normal;
+            font-family: Mangal;
+        }
+
+        .nav {
+            padding: 30px;
+        }
+
+            .nav a {
+                font-family: Mangal;
+            }
+
+        .main {
+            padding-top: 20px;
+        }
+
+            .main table {
+                border-collapse: collapse;
+                text-align: center;
+                font-family: Mangal;
+            }
+
+            .main table, th, td {
+                border: 2px solid;
+            }

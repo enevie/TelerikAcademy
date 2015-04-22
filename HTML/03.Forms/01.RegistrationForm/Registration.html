@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration forms</title>
+    <style>
+        #bottom {
+            background: lightblue;
+            text-align: center;
+        }
+        .firstColumn{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <table border="1">
+            <colgroup>
+                <col style="width:200px" />
+                <col style="width:200px" />
+            </colgroup>
+            <tr>
+                <td class="firstColumn">Last Name</td>
+                <td><input type="text" name="lastname" style="width:180px" />  </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">First Name</td>
+                <td><input type="text" name="firstname" style="width:180px" />  </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Adress</td>
+                <td><textarea style="height:70px"></textarea></td>
+            </tr>
+            <tr>
+                <td class="firstColumn">City</td>
+                <td> <input type="text" name="city" style=" width:50%;" /> State <input type="text" name="state" style="width:50px" /> </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Zip/Postal Code</td>
+                <td><input type="text" name="postalcode" style="width:30%" /> </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Country</td>
+                <td>
+                    <select name="country" style="width:150px">
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="America">USA</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Phone(country code, area code,number)</td>
+                <td>
+                    (+<input type="tel" name="CountryCode" style="width:20%" /> )
+                    <input type="tel" name="AreaCode" style="width:20%" />
+                    <input type="tel" name="PhoneNumber" style="width:30%" />
+                </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">E-mail</td>
+                <td><input type="email" pattern="[^ @]*@[^ @].[^ @]" /> </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Birth date</td>
+                <td><input type="date" name="BirthDate" /></td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Gender</td>
+                <td>
+                    <select name="gender" style="width:30%">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Starting Date</td>
+                <td>
+                    Spring 15<input type="radio" name="period" value="Spring 2015" />
+                    Summer 15 <input type="radio" name="period" value="Summer 2015" />
+                </td>
+            </tr>
+            <tr>
+                <td class="firstColumn">Comments/Questions</td>
+                <td><textarea style="height:80px"></textarea></td>
+            </tr>
+            <tr>
+                <td id="bottom" colspan="2">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Clean This Form" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
