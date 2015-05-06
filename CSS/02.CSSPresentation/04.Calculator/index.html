@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+    <link href="calc-css.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <img src="images/calculator.png" alt="calculator" /> <p>Calculator</p>
+        <div class="buttons">
+            <input type="button" name="button-min" /><input type="button" name="button-max" /><input type="button" name="button-exit" />
+        </div>
+        <div class="wrapper">
+            <nav>
+                <a href="#"><span class="fLettr">V</span>iew</a>
+                <a href="#"><span class="fLettr">E</span>dit</a>
+                <a href="#"><span class="fLettr">H</span>elp</a>
+            </nav>
+
+            <table id="general-table">
+                <tr>
+                    <td colspan="10"><input type="text" name="result" /> </td>
+                </tr>
+                <tr>
+                    <table id="bits">
+                        <tr>
+                            <td>0000<br />
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                        </tr>
+                        <tr class="grey-bit">
+                            <td colspan="4">63</td>
+                            <td colspan="3">47</td>
+                            <td class="last-element">32</td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>1000</td>
+                            <td>0111</td>
+                            <td>0001</td>
+                            <td>1011</td>
+                            <td>1011</td>
+                            <td>0111</td>
+                        </tr>
+                        <tr class="grey-bit">
+                            <td colspan="4">31</td>
+                            <td colspan="3">15</td>
+                            <td class="last-element">0</td>
+                        </tr>
+                </tr>
+                <tr>
+            </table>
+            <table id="buttons-table">
+                <tr>
+                    <td id="hex-menu" rowspan="3">
+                        <input type="radio" name="hex" />Hex<br />
+                        <input type="radio" name="hex" />Dec<br />
+                        <input type="radio" name="hex" />Oct<br />
+                        <input type="radio" name="hex" />Bin
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="Mod" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="A" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="MC" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="MR" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="MS" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="M+" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="M-" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="butt" value="(" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value=")" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="B" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="---" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="CE" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="C" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="+-" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="sqrt" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="butt" value="RoL" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="RoR" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="C" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="7" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="8" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="9" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="/" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="%" />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="hex-menu" rowspan="3">
+                        <input type="radio" name="word" />Qword<br />
+                        <input type="radio" name="word" />Dword<br />
+                        <input type="radio" name="word" />Word<br />
+                        <input type="radio" name="word" />Byte
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="Or" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="Xor" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="D" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="4" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="5" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="6" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="*" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="1/x" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="butt" value="Lsh" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="Rsh" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="E" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="1" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="2" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="3" style="font-size:20px" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="-" />
+                    </td>
+                    <td rowspan="2">
+                        <input type="button" name="butt" value="=" style="height:58px; text-align:center; font-size:20px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="butt" value="Not" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="And" />
+                    </td>
+                    <td>
+                        <input type="button" name="butt-empty" value="F" />
+                    </td>
+                    <td colspan="2">
+                        <input type="button" name="butt" value="0" style="width:67px; text-align:center; font-size:20px" />
+                    </td>
+
+                    <td>
+                        <input type="button" name="butt-empty" value="." />
+                    </td>
+                    <td>
+                        <input type="button" name="butt" value="+" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

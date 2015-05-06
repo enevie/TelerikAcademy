@@ -1,0 +1,31 @@
+﻿ul {
+    list-style: none;
+    position: relative;
+}
+
+#menu {
+    width: 150px;
+}
+
+ul li ul {
+    display: none;
+}
+
+li:hover > ul {
+    padding-left: 20px;
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+ul ul li a {
+    color: lightgrey;
+}

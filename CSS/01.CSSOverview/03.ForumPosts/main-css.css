@@ -1,0 +1,52 @@
+﻿body {
+    background-color: lightgray;
+}
+
+    body > header {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+
+nav ul li {
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        text-decoration-style: none;
+    }
+
+
+ul > :nth-of-type(2) {
+    background-color: dimgray;
+}
+
+ul > :nth-of-type(4) {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 17px;
+}
+
+article header h1 {
+    color: white;
+    font-size: 26px;
+}
+
+article p a {
+    text-decoration: none;
+    color: black;
+}
+
+body > footer {
+    text-align: center;
+}

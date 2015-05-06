@@ -1,0 +1,67 @@
+﻿body {
+    background-color: grey;
+}
+
+h1 {
+    font-size: 20px;
+    color: ThreeDDarkShadow;
+    padding-bottom: 20px;
+}
+
+th {
+    color: lightgray;
+    float: left;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+td {
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: lightgoldenrodyellow;
+}
+
+    a:hover {
+        color: yellow;
+    }
+
+
+.dot {
+    font-size: 100px;
+    color: lightgreen;
+    position: absolute;
+    top: -5px;
+    left: 90px;
+}
+
+.red {
+    color: red;
+}
+
+.grey {
+    color: darkslategrey;
+}
+
+.orange {
+    color: darkorange;
+}
+
+.gold, .name {
+    color: lightgoldenrodyellow;
+}
+
+.red, .grey, .orange, .gold, .name {
+    font-size: 13px;
+}
+
+    .name:before {
+        content: "•";
+        font-size: 50px;
+        line-height: 16px;
+        vertical-align: top;
+        color: #77b880;
+    }
